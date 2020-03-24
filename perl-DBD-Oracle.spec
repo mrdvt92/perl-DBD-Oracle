@@ -1,8 +1,8 @@
 %define name perl-DBD-Oracle
 %define pkgname %(echo %{name}| sed 's/perl-//')
-%{!?version:%define version 1.74}
-%{!?oi_ver:%define oi_ver instantclient11.2}
-%{!?oi_release:%define oi_release 11.2.0.4.0}
+%{!?version:%define version 1.80}
+%{!?oi_ver:%define oi_ver instantclient19.6}
+%{!?oi_release:%define oi_release 19.6.0.0.0}
 %define release %{oi_release}%{dist}
 %define perl_vendorarch %(eval "$(%{__perl} -V:installvendorarch)"; echo $installvendorarch)
 %define _use_internal_dependency_generator 0
